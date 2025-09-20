@@ -1,0 +1,111 @@
+{
+  "fetch_time": "2025-09-20T17:43:40.483127",
+  "current_weather": {
+    "timestamp": "2025-09-20T17:43:40.575486",
+    "temperature": null,
+    "humidity": 100,
+    "rainfall_status": "raining",
+    "weather_conditions": null
+  },
+  "rainfall_data": {
+    "timestamp": "2025-09-20T17:43:40.595389",
+    "regions": {
+      "西 區": {
+        "min_rainfall": 1.0,
+        "max_rainfall": 1.0,
+        "average_rainfall": 1.0
+      },
+      "南 區": {
+        "min_rainfall": 1.0,
+        "max_rainfall": 1.0,
+        "average_rainfall": 1.0
+      },
+      "東 區": {
+        "min_rainfall": 0.0,
+        "max_rainfall": 1.0,
+        "average_rainfall": 0.5
+      }
+    },
+    "total_regions": 3,
+    "average_rainfall": 0.8333333333333334
+  },
+  "weather_warnings": {
+    "timestamp": "2025-09-20T17:43:40.675984",
+    "active_warnings": [],
+    "warning_level": "none"
+  },
+  "district_coordinates": {
+    "Central & Western": {
+      "lat": 22.2855,
+      "lon": 114.1577
+    },
+    "Eastern": {
+      "lat": 22.2783,
+      "lon": 114.2367
+    },
+    "Southern": {
+      "lat": 22.2461,
+      "lon": 114.1628
+    },
+    "Wan Chai": {
+      "lat": 22.2767,
+      "lon": 114.1759
+    },
+    "Kowloon City": {
+      "lat": 22.3251,
+      "lon": 114.1944
+    },
+    "Kwun Tong": {
+      "lat": 22.3127,
+      "lon": 114.2267
+    },
+    "Sham Shui Po": {
+      "lat": 22.3309,
+      "lon": 114.1639
+    },
+    "Wong Tai Sin": {
+      "lat": 22.3418,
+      "lon": 114.1946
+    },
+    "Yau Tsim Mong": {
+      "lat": 22.3093,
+      "lon": 114.1694
+    },
+    "Islands": {
+      "lat": 22.2587,
+      "lon": 113.9447
+    },
+    "Kwai Tsing": {
+      "lat": 22.3573,
+      "lon": 114.1378
+    },
+    "North": {
+      "lat": 22.4964,
+      "lon": 114.1476
+    },
+    "Sai Kung": {
+      "lat": 22.3816,
+      "lon": 114.2723
+    },
+    "Sha Tin": {
+      "lat": 22.3817,
+      "lon": 114.1973
+    },
+    "Tai Po": {
+      "lat": 22.4455,
+      "lon": 114.1645
+    },
+    "Tsuen Wan": {
+      "lat": 22.3736,
+      "lon": 114.1177
+    },
+    "Tuen Mun": {
+      "lat": 22.3943,
+      "lon": 113.9766
+    },
+    "Yuen Long": {
+      "lat": 22.4473,
+      "lon": 114.0305
+    }
+  }
+}

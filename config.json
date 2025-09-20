@@ -1,0 +1,47 @@
+{
+  "app_config": {
+    "name": "Hong Kong Rainfall Monitor",
+    "version": "1.0.0",
+    "description": "Real-time rainfall data visualization for Hong Kong",
+    "author": "HK Weather Team"
+  },
+  "data_sources": {
+    "hko_base_url": "https://www.hko.gov.hk",
+    "rainfall_endpoint": "/textonly/current/rainfall_sr_uc.htm",
+    "radar_endpoint": "/tc/wxinfo/radars/radar_range1.htm",
+    "main_page": "/tc/index.html"
+  },
+  "update_settings": {
+    "default_interval_minutes": 5,
+    "max_interval_minutes": 60,
+    "min_interval_minutes": 1,
+    "data_retention_hours": 24,
+    "cleanup_days": 7
+  },
+  "dashboard_settings": {
+    "default_host": "127.0.0.1",
+    "default_port": 8050,
+    "auto_refresh": true,
+    "theme": "bootstrap"
+  },
+  "visualization_settings": {
+    "chart_height": 400,
+    "map_zoom": 11,
+    "color_scheme": "blue_scale",
+    "save_static_images": true,
+    "image_format": "png",
+    "image_dpi": 300
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "hk_rainfall_monitor.log",
+    "max_size_mb": 10,
+    "backup_count": 5
+  },
+  "directories": {
+    "data": "data",
+    "output": "output",
+    "logs": "logs",
+    "temp": "temp"
+  }
+}

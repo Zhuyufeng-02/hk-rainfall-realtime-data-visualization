@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_e7034e0fefa8a88cdbaf2aeb819260a8 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div style="position: fixed; 
+                        bottom: 50px; left: 50px; width: 150px; height: 120px; 
+                        background-color: white; border:2px solid grey; z-index:9999; 
+                        font-size:14px; padding: 10px">
+            <p><b>Rainfall Legend</b></p>
+            <p><i class="fa fa-circle" style="color:gray"></i> No rain</p>
+            <p><i class="fa fa-circle" style="color:green"></i> Light (< 1mm)</p>
+            <p><i class="fa fa-circle" style="color:blue"></i> Moderate (1-5mm)</p>
+            <p><i class="fa fa-circle" style="color:orange"></i> Heavy (5-10mm)</p>
+            <p><i class="fa fa-circle" style="color:red"></i> Very Heavy (> 10mm)</p>
+            </div>
+            
+    
+            <div class="folium-map" id="map_e7034e0fefa8a88cdbaf2aeb819260a8" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_e7034e0fefa8a88cdbaf2aeb819260a8 = L.map(
+                "map_e7034e0fefa8a88cdbaf2aeb819260a8",
+                {
+                    center: [22.3193, 114.1694],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 11,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_81f5446cddf4ad27adacc846f281bd7f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_81f5446cddf4ad27adacc846f281bd7f.addTo(map_e7034e0fefa8a88cdbaf2aeb819260a8);
+        
+    
+            var circle_marker_fe9d924a4ca752579452071193a8d906 = L.circleMarker(
+                [22.32718729984405, 114.10607645010182],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_e7034e0fefa8a88cdbaf2aeb819260a8);
+        
+    
+        var popup_00e1ff451771be9b39b9e4db82a61e65 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_fc41df07d06d2b5f0a01d268f24c8723 = $(`<div id="html_fc41df07d06d2b5f0a01d268f24c8723" style="width: 100.0%; height: 100.0%;">                 <b>西 區</b><br>                 Rainfall: 1.0mm<br>                 Range: 1.0 - 1.0mm                 </div>`)[0];
+                popup_00e1ff451771be9b39b9e4db82a61e65.setContent(html_fc41df07d06d2b5f0a01d268f24c8723);
+            
+        
+
+        circle_marker_fe9d924a4ca752579452071193a8d906.bindPopup(popup_00e1ff451771be9b39b9e4db82a61e65)
+        ;
+
+        
+    
+    
+            var circle_marker_64cbde4e65e7b36eba94ebb6054c9ad9 = L.circleMarker(
+                [22.228165186614127, 114.12796772739904],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "blue", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_e7034e0fefa8a88cdbaf2aeb819260a8);
+        
+    
+        var popup_9705acc3113ed204cef8160289c93a3f = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_b166b2e9ef7980c93b5b6c8396e888a4 = $(`<div id="html_b166b2e9ef7980c93b5b6c8396e888a4" style="width: 100.0%; height: 100.0%;">                 <b>南 區</b><br>                 Rainfall: 1.0mm<br>                 Range: 1.0 - 1.0mm                 </div>`)[0];
+                popup_9705acc3113ed204cef8160289c93a3f.setContent(html_b166b2e9ef7980c93b5b6c8396e888a4);
+            
+        
+
+        circle_marker_64cbde4e65e7b36eba94ebb6054c9ad9.bindPopup(popup_9705acc3113ed204cef8160289c93a3f)
+        ;
+
+        
+    
+    
+            var circle_marker_3099617f0bda9852e7a49f970a3aab2c = L.circleMarker(
+                [22.328500279672507, 114.23238016218404],
+                {"bubblingMouseEvents": true, "color": "green", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5, "stroke": true, "weight": 2}
+            ).addTo(map_e7034e0fefa8a88cdbaf2aeb819260a8);
+        
+    
+        var popup_b0a786eb987f0a560dbcb54d45dc1461 = L.popup({
+  "maxWidth": 200,
+});
+
+        
+            
+                var html_8a2c8b364da4e570f8d1521e605a20a4 = $(`<div id="html_8a2c8b364da4e570f8d1521e605a20a4" style="width: 100.0%; height: 100.0%;">                 <b>東 區</b><br>                 Rainfall: 0.5mm<br>                 Range: 0.0 - 1.0mm                 </div>`)[0];
+                popup_b0a786eb987f0a560dbcb54d45dc1461.setContent(html_8a2c8b364da4e570f8d1521e605a20a4);
+            
+        
+
+        circle_marker_3099617f0bda9852e7a49f970a3aab2c.bindPopup(popup_b0a786eb987f0a560dbcb54d45dc1461)
+        ;
+
+        
+    
+</script>
+</html>
